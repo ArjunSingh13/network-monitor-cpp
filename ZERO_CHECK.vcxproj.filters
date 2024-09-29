@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <CustomBuild Include="C:\Work\Embedded\CPP\VSC_Workspace\network-monitor\CMakeFiles\164a8f56f11f14a3550ee772c5b1830e\generate.stamp.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="CMake Rules">
+      <UniqueIdentifier>{4BD473F1-0938-32E9-B111-3852D44B31A1}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

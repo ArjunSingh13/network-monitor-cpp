@@ -58,6 +58,24 @@ build CMakeFiles\network-monitor.dir\src\main.cpp.obj: CXX_COMPILER__network-mon
   TARGET_COMPILE_PDB = CMakeFiles\network-monitor.dir\
   TARGET_PDB = network-monitor.pdb
 
+build CMakeFiles\network-monitor.dir\src\websocket.cpp.obj: CXX_COMPILER__network-monitor_unscanned_Release C$:\Work\Embedded\CPP\VSC_Workspace\network-monitor\src\websocket.cpp || cmake_object_order_depends_target_network-monitor
+  DEFINES = -D_WIN32_WINNT=0x0601
+  FLAGS = /DWIN32 /D_WINDOWS /GR /EHsc /O2 /Ob2 /DNDEBUG -MD
+  INCLUDES = -external:IC:\Users\user\.conan2\p\boost82872f5aaa78a\p\include -external:W0
+  OBJECT_DIR = CMakeFiles\network-monitor.dir
+  OBJECT_FILE_DIR = CMakeFiles\network-monitor.dir\src
+  TARGET_COMPILE_PDB = CMakeFiles\network-monitor.dir\
+  TARGET_PDB = network-monitor.pdb
+
+build CMakeFiles\network-monitor.dir\src\logging.cpp.obj: CXX_COMPILER__network-monitor_unscanned_Release C$:\Work\Embedded\CPP\VSC_Workspace\network-monitor\src\logging.cpp || cmake_object_order_depends_target_network-monitor
+  DEFINES = -D_WIN32_WINNT=0x0601
+  FLAGS = /DWIN32 /D_WINDOWS /GR /EHsc /O2 /Ob2 /DNDEBUG -MD
+  INCLUDES = -external:IC:\Users\user\.conan2\p\boost82872f5aaa78a\p\include -external:W0
+  OBJECT_DIR = CMakeFiles\network-monitor.dir
+  OBJECT_FILE_DIR = CMakeFiles\network-monitor.dir\src
+  TARGET_COMPILE_PDB = CMakeFiles\network-monitor.dir\
+  TARGET_PDB = network-monitor.pdb
+
 
 # =============================================================================
 # Link build statements for EXECUTABLE target network-monitor
@@ -66,7 +84,7 @@ build CMakeFiles\network-monitor.dir\src\main.cpp.obj: CXX_COMPILER__network-mon
 #############################################
 # Link the executable network-monitor.exe
 
-build network-monitor.exe: CXX_EXECUTABLE_LINKER__network-monitor_Release CMakeFiles\network-monitor.dir\src\main.cpp.obj | C$:\Users\user\.conan2\p\boost82872f5aaa78a\p\lib\libboost_filesystem.lib C$:\Users\user\.conan2\p\boost82872f5aaa78a\p\lib\libboost_system.lib
+build network-monitor.exe: CXX_EXECUTABLE_LINKER__network-monitor_Release CMakeFiles\network-monitor.dir\src\main.cpp.obj CMakeFiles\network-monitor.dir\src\websocket.cpp.obj CMakeFiles\network-monitor.dir\src\logging.cpp.obj | C$:\Users\user\.conan2\p\boost82872f5aaa78a\p\lib\libboost_filesystem.lib C$:\Users\user\.conan2\p\boost82872f5aaa78a\p\lib\libboost_system.lib
   FLAGS = /DWIN32 /D_WINDOWS /GR /EHsc /O2 /Ob2 /DNDEBUG -MD
   LINK_FLAGS = /machine:x64 /INCREMENTAL:NO /subsystem:console
   LINK_LIBRARIES = C:\Users\user\.conan2\p\boost82872f5aaa78a\p\lib\libboost_filesystem.lib  C:\Users\user\.conan2\p\boost82872f5aaa78a\p\lib\libboost_system.lib  kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib

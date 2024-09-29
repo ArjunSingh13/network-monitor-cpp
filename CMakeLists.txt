@@ -7,7 +7,10 @@ list(PREPEND CMAKE_PREFIX_PATH "${CMAKE_BINARY_DIR}")
 # Find the Boost library with the required components
 find_package(Boost 1.78 REQUIRED COMPONENTS filesystem system)
 
-set(SOURCES "${CMAKE_CURRENT_SOURCE_DIR}/src/main.cpp")
+set(SOURCES "${CMAKE_CURRENT_SOURCE_DIR}/src/main.cpp"
+            "${CMAKE_CURRENT_SOURCE_DIR}/src/websocket.cpp"
+            "${CMAKE_CURRENT_SOURCE_DIR}/src/logging.cpp" 
+)
 
 add_executable(network-monitor ${SOURCES})
 target_compile_features(network-monitor

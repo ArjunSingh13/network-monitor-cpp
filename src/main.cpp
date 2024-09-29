@@ -5,15 +5,10 @@
 #include <iostream>
 #include <thread>
 
-using tcp = boost::asio::ip::tcp;
+#include "websocket.h"
+#include "logging.h"
 
-void Log(boost::system::error_code ec)
-{
-    std::cerr << "[" << std::setw(14) << std::this_thread::get_id() << "] "
-        << (ec ? "Error: " : "OK")
-        << (ec ? ec.message() : "")
-        << std::endl;
-}
+using tcp = boost::asio::ip::tcp;
 
 void OnConnect(boost::system::error_code ec)
 {
@@ -25,6 +20,8 @@ int main()
     std::cerr << "[" << std::setw(14) << std::this_thread::get_id() << "] main"
         << std::endl;
 
+webSocketConnect();
+#if 0 // Practicing multiple threads for dividing work.
     // Always start with an I/O context object.
     boost::asio::io_context ioc{};
 
@@ -64,6 +61,6 @@ int main()
     for (size_t idx{ 0 }; idx < nThreads; ++idx) {
         threads[idx].join();
     }
-
+#endif
     return 0;
 }

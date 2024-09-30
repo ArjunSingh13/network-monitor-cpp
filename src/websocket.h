@@ -1,4 +1,5 @@
 
 #include <iostream>
-int webSocketConnect(void);
+int webSocketSyncConnect(void);
+int websocketAsyncConnect(void);
 

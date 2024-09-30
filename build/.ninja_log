@@ -1,7 +1,16 @@
 # ninja log v5
-42	4050	7493316196372947	CMakeFiles/network-monitor.dir/src/main.cpp.obj	b64ce19cc7eff2a6
-9019	9180	7493322674830766	network-monitor.exe	4dbabf3af1fed6cd
-34	9018	7493322673090766	CMakeFiles/network-monitor.dir/src/websocket.cpp.obj	be484a26c455fea4
+23	4015	7493384685154911	CMakeFiles/network-monitor.dir/src/main.cpp.obj	b64ce19cc7eff2a6
+14397	14574	7493396716642574	network-monitor.exe	4dbabf3af1fed6cd
+23	14395	7493396714735406	CMakeFiles/network-monitor.dir/src/websocket.cpp.obj	be484a26c455fea4
 50	4081	7493316196676661	CMakeFiles/network-monitor.dir/src/logging.cpp.obj	51492d78f84d94d9
-41	8866	7493323442940269	CMakeFiles/network-monitor.dir/src/websocket.cpp.obj	be484a26c455fea4
-8867	8994	7493323444315099	network-monitor.exe	4dbabf3af1fed6cd
+35	4164	7493398081336050	CMakeFiles/network-monitor.dir/src/main.cpp.obj	b64ce19cc7eff2a6
+47	14627	7493398185813414	CMakeFiles/network-monitor.dir/src/websocket.cpp.obj	be484a26c455fea4
+14628	14828	7493398187973108	network-monitor.exe	4dbabf3af1fed6cd
+42	12853	7493399371166611	CMakeFiles/network-monitor.dir/src/websocket.cpp.obj	be484a26c455fea4
+12863	13051	7493399373386749	network-monitor.exe	4dbabf3af1fed6cd
+42	14342	7493399932366516	CMakeFiles/network-monitor.dir/src/websocket.cpp.obj	be484a26c455fea4
+14343	14539	7493399934474115	network-monitor.exe	4dbabf3af1fed6cd
+42	14577	7493400510557319	CMakeFiles/network-monitor.dir/src/websocket.cpp.obj	be484a26c455fea4
+14578	14773	7493400512614103	network-monitor.exe	4dbabf3af1fed6cd
+44	13908	7493401331722195	CMakeFiles/network-monitor.dir/src/websocket.cpp.obj	be484a26c455fea4
+13909	14113	7493401333974813	network-monitor.exe	4dbabf3af1fed6cd

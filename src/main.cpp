@@ -20,7 +20,7 @@ int main()
     std::cerr << "[" << std::setw(14) << std::this_thread::get_id() << "] main"
         << std::endl;
 
-webSocketConnect();
+websocketAsyncConnect();
 #if 0 // Practicing multiple threads for dividing work.
     // Always start with an I/O context object.
     boost::asio::io_context ioc{};

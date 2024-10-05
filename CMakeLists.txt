@@ -12,6 +12,11 @@ set(SOURCES "${CMAKE_CURRENT_SOURCE_DIR}/src/main.cpp"
             "${CMAKE_CURRENT_SOURCE_DIR}/src/logging.cpp" 
 )
 
+#target_include_directories(network-monitor
+#    PRIVATE
+#        src
+#)
+
 add_executable(network-monitor ${SOURCES})
 target_compile_features(network-monitor
     PRIVATE

@@ -1,1 +1,93 @@
  
+# Ignore build directories
+/build/
+/_build/
+/[Bb]uild*/
+
+# Ignore CMake specific files
+CMakeFiles/
+CMakeCache.txt
+cmake_install.cmake
+CMakeScripts/
+CTestTestfile.cmake
+Makefile
+*.cmake
+
+# Ignore Ninja specific files
+*.ninja
+.ninja_log
+.ninja_deps
+
+# Conan specific files
+conanbuildinfo.cmake
+conanbuildinfo.txt
+conaninfo.txt
+graph_info.json
+conan.lock
+conanfile.lock
+
+# West and Zephyr specific files (if using Zephyr project)
+west/
+zephyr/
+*.hex
+*.bin
+*.out
+zephyr/.config
+modules/*/zephyr/.config
+modules/*/zephyr/.config.old
+zephyr/CMakeFiles/
+zephyr/zephyr.elf
+zephyr/zephyr.map
+
+# Temporary files and logs
+*.log
+*.tmp
+*.swp
+*.swo
+*.bak
+*.orig
+*.DS_Store
+
+# Object files and intermediate files
+*.obj
+*.o
+*.lo
+*.la
+*.al
+*.libs
+*.a
+*.so
+*.dll
+*.dylib
+*.lib
+*.exe
+*.out
+*.i
+
+# Ignore generated documentation
+/docs/*
+!docs/.keep  # Keep a placeholder file in the docs folder if needed
+
+# Ignore testing files and outputs
+Testing/
+test_output/
+
+# Ignore clangd/IDE-specific files
+.clangd/
+.vscode/
+.idea/
+*.iml
+
+# Ignore coverage files
+*.gcno
+*.gcda
+*.gcov
+lcov_report/
+
+# Ignore debugging and profiling files
+*.profraw
+*.profdata
+
+# Ignore custom toolchain or build environment files
+toolchain.cmake
+.env

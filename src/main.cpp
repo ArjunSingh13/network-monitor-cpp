@@ -5,7 +5,7 @@
 #include <iostream>
 #include <thread>
 
-#include "websocket.h"
+#include "websocket-client.h"
 #include "logging.h"
 
 using tcp = boost::asio::ip::tcp;

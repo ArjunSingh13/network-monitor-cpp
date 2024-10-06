@@ -1,6 +1,14 @@
 
 #include <iostream>
+#include "logging.h"
 
+#include <boost/asio.hpp>
+#include <boost/system/error_code.hpp>
+#include <boost/beast/websocket.hpp> // Correct WebSocket header
+#include <boost/beast/core.hpp> // For flat_buffer and tcp_stream
+#include <iomanip>
+
+using tcp = boost::asio::ip::tcp;
 
 namespace NetworkMonitor {
 
@@ -21,10 +29,20 @@ private:
     bool closed_ {true};
 
     // Callback handlers
-    std::function<void(boost::system::error_code)> onConnect_;
-    std::function<void(boost::system::error_code, std::string&&)> onMessage_;
-    std::function<void(boost::system::error_code)> onDisconnect_;
+    /*
+       These three below area callbacks that we register so that they get asynchronously called and we pass
+       the information to the application level. Application has to provide these functions so that application
+       can handle what happens when we are connected, on message received and on disconnected.
+    */
+    std::function<void(boost::system::error_code)> OnConnect_;
+    std::function<void(boost::system::error_code, std::string&&)> OnMessage_;
+    std::function<void(boost::system::error_code)> OnDisconnect_;
     
+    /*
+        These are the library functions that manage what happens for example when URL is resolved. Then go to
+        OnConnect for handshake. There is nothing for application to do here, its websocket-client's internal
+        functionality for successful connection and communication. 
+    */
     void OnResolve(const boost::system::error_code& ec, tcp::resolver::results_type results);
     void OnConnect(const boost::system::error_code& ec);
     void ListenToIncomingMessage(const boost::system::error_code& ec);
@@ -93,32 +111,4 @@ public:
 };
 
 } // namespace NetworkMonitor
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-int webSocketSyncConnect(void);
-int websocketAsyncConnect(void);
 

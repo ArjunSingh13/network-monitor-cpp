@@ -8,7 +8,7 @@ list(PREPEND CMAKE_PREFIX_PATH "${CMAKE_BINARY_DIR}")
 find_package(Boost 1.78 REQUIRED COMPONENTS filesystem system)
 
 set(SOURCES "${CMAKE_CURRENT_SOURCE_DIR}/src/main.cpp"
-            "${CMAKE_CURRENT_SOURCE_DIR}/src/websocket.cpp"
+            "${CMAKE_CURRENT_SOURCE_DIR}/src/websocket-client.cpp"
             "${CMAKE_CURRENT_SOURCE_DIR}/src/logging.cpp" 
 )
 
